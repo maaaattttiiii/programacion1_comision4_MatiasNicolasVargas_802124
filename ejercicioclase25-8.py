@@ -113,9 +113,9 @@ if fin == False:
     elif dia_semana == "jueves":
         print ("Jueves fue dia de práctica hablada")
         asistencia = int(input("Indique el porcentaje de asistencia: %"))
-        if asistencia > 50 < 100: 
+        if asistencia > 50 and asistencia <= 100:
             print ("Asistió la mayoría")
-        elif asistencia >= 1 <= 50 :
+        elif asistencia >= 0 and asistencia <= 50 :
             print ("No asistió la mayoría")
         else : 
             print ("Ingrese un porcentaje válido")
@@ -124,7 +124,8 @@ if fin == False:
             print ("Comienzo de nuevo ciclo")
             nuevos = int(input("Ingrese cuantos alumnos nuevos hay: "))
             valor = int(input("Ingrese el valor de la cuota por cada alumno: "))
-            print(f"El ingreso total sería de: ${nuevos}*{valor}")
+            total_cuota = nuevos * valor 
+            print(f"El ingreso total sería de: $",total_cuota)
         else: 
             print( f"Hoy es, {dia_semana}, el día de ingles para viajeros")
     else: 
