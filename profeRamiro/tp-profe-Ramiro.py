@@ -23,6 +23,8 @@ tp_final = float(input("Ingrese la nota del trabajo final: ")) * 0.15
 nota = promedio + ex_final + tp_final
 print("La calificacion final de la materia fue de: ",nota)
 
+print("-------------------------------------------------------------------")
+
 #EJERCICIO 7: CONVERSIÓN DE DIVISAS
 
 print("BUENAS, Ingrese un valor en dólares y se lo convertimos a (pesos arg, pesos col , o euros)")
@@ -37,4 +39,34 @@ eu = dolar * 0.86
 
 print(f"La suma de, ${dolar} dolares , equivale a... ({ars} pesos argentinos ), ({col} pesos colombianos), ({eu} euros)")
 
+print("-------------------------------------------------------------------")
 
+#EJERCICIO 8: CÁLCULOS DE VIAJE
+
+distancia =float(input("Ingrese la distancia del viaje en km: "))
+precio = float(input("Ingrese el precio de la nafta por litro: "))
+total_litros = distancia / 12.5
+precioF = total_litros * precio
+tiempo = distancia / 90
+
+
+print(f"Para todo el viaje nesesitará un total de: ${precioF}, ya que gastará {total_litros} litros en todo el viaje")
+print(f"Si la velocidad se mantiene en un promedio de 90km/h, el viaje durará {tiempo} horas aprox")
+
+
+print("-------------------------------------------------------------------")
+
+#EJERCICIO 9: PRÉSTAMO BANCARIO
+
+prestamo = float(input("Ingrese el monto del préstamo solicitado: "))
+interes = 0.02
+meses = 12
+
+interes_total = prestamo * interes * meses 
+
+devolver = prestamo + interes_total 
+
+cuota = interes_total / meses 
+
+print(f"El monto total a devolver por su prestamo de: ${prestamo} pesos, es de: ${devolver} pesos")
+print(f"El valor de las cuotas será de: ${cuota} pesos")
