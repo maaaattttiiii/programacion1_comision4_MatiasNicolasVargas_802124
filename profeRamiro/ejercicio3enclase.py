@@ -48,12 +48,12 @@ monto_aprobado = monto_maximo(ingresos, años_trabajo, historial)
 
 if monto_aprobado > 0 and monto <= monto_aprobado:
     print("✔ Su crédito fue aprobado\n")
-    print("Cliente:            ", nombre)
-    print("Cuil:               ", cuil)
-    print(f"Ingresos:           ${ingresos}")
-    print("Antigüedad:         ", años_trabajo, "años")
-    print("Historial:          ", historial, "(bueno=1, regular=2, malo=3)")
-    print(f"Monto aprobado:     ${monto}")
+    print("Cliente:            ",nombre)
+    print("Cuil:               ",cuil)
+    print(f"Ingresos:            ${ingresos}")
+    print("Antigüedad:         ",años_trabajo, "años")
+    print("Historial:          ",historial, "(bueno=1, regular=2, malo=3)")
+    print(f"Monto aprobado:      ${monto}")
 else:
     print("❌ Su crédito fue rechazado")
     if monto_aprobado > 0:
