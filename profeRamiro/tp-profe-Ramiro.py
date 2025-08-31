@@ -59,7 +59,7 @@ print("-------------------------------------------------------------------")
 #EJERCICIO 9: PRÉSTAMO BANCARIO
 
 prestamo = float(input("Ingrese el monto del préstamo solicitado: "))
-interes = 0.02
+interes = 1.02
 meses = 12
 
 interes_total = prestamo * interes * meses 
