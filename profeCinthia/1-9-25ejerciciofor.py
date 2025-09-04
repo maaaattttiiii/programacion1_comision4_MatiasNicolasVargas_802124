@@ -66,7 +66,7 @@ while True:
         
         
         
-    elif opcion == 4:
+    elif opcion == 34:
         print("Saliendo entonces...")
         break
 
