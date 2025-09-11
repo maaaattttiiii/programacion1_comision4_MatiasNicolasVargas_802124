@@ -26,4 +26,4 @@ for a in letras:
                             if contador == corrimiento:
                                 print("La nueva patente es:", actual)
                                 exit()
-                            contador += 1
+                                contador += 1
