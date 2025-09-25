@@ -19,12 +19,13 @@ for i in range(5):
 win = False
  
 while win == False:
-    sorteo = random.randint(1,51)
-    print("SALIÓ EL NÚMERO: ",sorteo)
     for i in range(5):
         for j in range(5):
+            sorteo = random.randint(1,51)
+            print("SALIÓ EL NÚMERO: ",sorteo)
             if sorteo in carton:
                 print(f"Lo tienes")
                 carton[i][j]= 0
             else:
                 print("No lo tienes")
+            

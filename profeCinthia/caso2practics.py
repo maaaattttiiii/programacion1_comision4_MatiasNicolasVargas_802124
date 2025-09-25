@@ -17,10 +17,11 @@ while True:
     print("\n--------------------------------------------------------------")
 
     op= int(input("Ingrese la opcion que quiera realizar..."))
-    print()
-    print("INGRESAR LISTA DE ESPECIALIDADES")
+    
 
     if op == 1:
+        print()
+        print("INGRESAR LISTA DE ESPECIALIDADES")
         n1= int(input("Ingrese la cantidad de especialidades que quiere agregar: "))
         while True:
             if n1 > 0:
@@ -33,4 +34,17 @@ while True:
         for i in range(n1):
             esp = input(f"Ingrese la especialidad {i+1}: ")
             especialidades.append(esp)
-        print(especialidades)
+    
+    elif op == 2:
+        print()
+        print("INGRESAR LISTA DE TURNOS DISPONIBLES POR ESPECIALIDAD")
+
+        esp = len(especialidades)
+
+        if esp < 0:
+            print("ERROR! Todavia no se cargan especialidades a las que se les pueda asignar turnos")
+        else : 
+            for i in range(esp):
+                turno = int(input(f"Ingrese cuantos turnos hay para la especialidad --->({especialidades[i]}): "))
+                turnos.append(turno)      
+
